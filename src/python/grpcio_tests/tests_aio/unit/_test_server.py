@@ -212,7 +212,7 @@ async def start_test_server(
     server_credentials=None,
     interceptors=None,
     record: Optional[list] = None,
-    sync_handler = False,
+    sync_handler=False,
 ):
     server = aio.server(
         options=(("grpc.so_reuseport", 0),), interceptors=interceptors
